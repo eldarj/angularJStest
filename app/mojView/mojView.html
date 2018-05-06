@@ -1,0 +1,20 @@
+<h5>Filter eg. lowercase</h5>
+<div ng-controller="mojViewCtrl">
+    <p>{{mojeIme | lowercase}}</p>
+</div>
+<h5>Filter <i>filter</i> and Drag&Drop</h5>
+<form>
+    <div class="form-group">
+        <label>Filter</label>
+        <input class="form-control" name="filterx" ng-model="filterx">
+    </div>
+</form>
+<ul class="simple-pill-list">
+    <li dataMyurl="{{x.picUrl}}" draggable class="mojaKlasa" ng-click="sickFunction($event, x)" ng-repeat="x in persons | filter: filterx">
+        {{x.name}}
+    </li>
+</ul>
+
+<div class="drop-container" droppable  ondragenter="return false;" ondragover="return false;">
+    <p>Drop here</p>
+</div>

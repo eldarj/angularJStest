@@ -1,0 +1,53 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.myForm {
+  border: 3px solid #eee;
+  padding: 15px;
+  margin: 15px;
+}
+
+.simple-pill-list {
+  list-style-type: none;
+}
+.simple-pill-list li {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.drop-container {
+  border: 3px solid #eee;
+  padding: 15px;
+  margin: 15px;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 500px;
+}
